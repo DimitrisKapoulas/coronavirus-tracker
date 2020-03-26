@@ -17,9 +17,14 @@
     <div class="jumbotron">
         <h1 class="display-4" th:text="${totalReportedCases}"></h1>
         <p class="lead">Total cases reported as of today.</p>
+        <hr class="my-4">
+        <p class="lead">
+        <span>New cases reported since previous day: </span>
+        <span th:text="${totalNewCases}"> </span>
+        </p>
     </div>
     <div class="table-responsive">
-        <table class="table">
+        <table class="table table-bordered">
             <tr>
                 <th>State/Province</th>
                 <th>Country/Region</th>
